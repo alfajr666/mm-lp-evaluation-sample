@@ -1,0 +1,58 @@
+# .gitignore for mm-lp-evaluation-sample repository
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+*.egg-info/
+.dist-info/
+build/
+develop-eggs/
+.eggs/
+parts/
+sdist/
+var/
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Data files (large raw data)
+
+
+# Temporary files
+*.log
+*.tmp
+
+# Secrets / credentials (if any)
+*.env
+
+# Any other generated files you don't want to track

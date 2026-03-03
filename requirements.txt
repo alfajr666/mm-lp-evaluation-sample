@@ -1,0 +1,9 @@
+pandas>=2.2.0
+numpy>=1.26.0
+requests>=2.32.0
+schedule>=1.2.1
+matplotlib>=3.8.0
+seaborn>=0.13.0
+ipywidgets>=8.1.0
+jupyter>=1.0.0
+pytest>=8.0.0

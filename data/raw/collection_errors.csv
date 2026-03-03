@@ -1,0 +1,21 @@
+timestamp_utc,exchange,pair,error
+2026-03-03T12:11:32.600987+00:00,binance,BTCUSDT,"request failed after 3 retries: HTTPSConnectionPool(host='api.binance.com', port=443): Max retries exceeded with url: /api/v3/depth?symbol=BTCUSDT&limit=20 (Caused by NameResolutionError(""HTTPSConnection(host='api.binance.com', port=443): Failed to resolve 'api.binance.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:11:38.638963+00:00,tokocrypto,BTCUSDT,"request failed after 3 retries: HTTPSConnectionPool(host='www.tokocrypto.com', port=443): Max retries exceeded with url: /open/v1/market/depth?symbol=BTCUSDT&limit=20 (Caused by NameResolutionError(""HTTPSConnection(host='www.tokocrypto.com', port=443): Failed to resolve 'www.tokocrypto.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:11:44.680690+00:00,tokocrypto,BTCIDR,"request failed after 3 retries: HTTPSConnectionPool(host='www.tokocrypto.com', port=443): Max retries exceeded with url: /open/v1/market/depth?symbol=BTCIDR&limit=20 (Caused by NameResolutionError(""HTTPSConnection(host='www.tokocrypto.com', port=443): Failed to resolve 'www.tokocrypto.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:11:50.716714+00:00,tokocrypto,USDTIDR,"request failed after 3 retries: HTTPSConnectionPool(host='www.tokocrypto.com', port=443): Max retries exceeded with url: /open/v1/market/depth?symbol=USDTIDR&limit=20 (Caused by NameResolutionError(""HTTPSConnection(host='www.tokocrypto.com', port=443): Failed to resolve 'www.tokocrypto.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:11:56.750516+00:00,reku,orderbookall,"request failed after 3 retries: HTTPSConnectionPool(host='api.reku.id', port=443): Max retries exceeded with url: /v2/orderbookall (Caused by NameResolutionError(""HTTPSConnection(host='api.reku.id', port=443): Failed to resolve 'api.reku.id' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:12:02.788423+00:00,indodax,btcidr,"request failed after 3 retries: HTTPSConnectionPool(host='indodax.com', port=443): Max retries exceeded with url: /api/ticker/btcidr (Caused by NameResolutionError(""HTTPSConnection(host='indodax.com', port=443): Failed to resolve 'indodax.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:12:08.831343+00:00,indodax,usdtidr,"request failed after 3 retries: HTTPSConnectionPool(host='indodax.com', port=443): Max retries exceeded with url: /api/ticker/usdtidr (Caused by NameResolutionError(""HTTPSConnection(host='indodax.com', port=443): Failed to resolve 'indodax.com' ([Errno 8] nodename nor servname provided, or not known)""))"
+2026-03-03T12:29:55.697608+00:00,tokocrypto,BTCUSDT:1m,Unexpected kline payload type for tokocrypto BTCUSDT 1m
+2026-03-03T12:29:55.874344+00:00,tokocrypto,BTCUSDT:5m,Unexpected kline payload type for tokocrypto BTCUSDT 5m
+2026-03-03T12:29:56.056822+00:00,tokocrypto,BTCIDR:1m,Unexpected kline payload type for tokocrypto BTCIDR 1m
+2026-03-03T12:29:56.233941+00:00,tokocrypto,BTCIDR:5m,Unexpected kline payload type for tokocrypto BTCIDR 5m
+2026-03-03T12:29:56.430206+00:00,tokocrypto,USDTIDR:1m,Unexpected kline payload type for tokocrypto USDTIDR 1m
+2026-03-03T12:29:56.615429+00:00,tokocrypto,USDTIDR:5m,Unexpected kline payload type for tokocrypto USDTIDR 5m
+2026-03-03T12:30:05.543659+00:00,reku,orderbookall,request failed after 3 retries: 400 Client Error: Bad Request for url: https://api.reku.id/v2/orderbookall
+2026-03-03T12:39:45.609818+00:00,tokocrypto,BTC_USDT:1m,Unexpected kline payload type for tokocrypto BTC_USDT 1m
+2026-03-03T12:39:45.790791+00:00,tokocrypto,BTC_USDT:5m,Unexpected kline payload type for tokocrypto BTC_USDT 5m
+2026-03-03T12:39:46.047901+00:00,tokocrypto,BTC_IDR:1m,Unexpected kline payload type for tokocrypto BTC_IDR 1m
+2026-03-03T12:39:46.256304+00:00,tokocrypto,BTC_IDR:5m,Unexpected kline payload type for tokocrypto BTC_IDR 5m
+2026-03-03T12:39:46.439969+00:00,tokocrypto,USDT_IDR:1m,Unexpected kline payload type for tokocrypto USDT_IDR 1m
+2026-03-03T12:39:46.632580+00:00,tokocrypto,USDT_IDR:5m,Unexpected kline payload type for tokocrypto USDT_IDR 5m
