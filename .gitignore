@@ -56,3 +56,5 @@ coverage.xml
 *.env
 
 # Any other generated files you don't want to track
+debug_*.py
+mm-lp-evaluation-framework-brief.md

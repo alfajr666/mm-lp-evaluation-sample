@@ -4,28 +4,28 @@ Use this rubric when selecting market makers for anchor pairs (for example BTC/I
 Score each dimension from 1 (weak) to 5 (strong).
 
 ## 1. Spread Quality
-- Score focus: committed spread target vs observed TWAS requirement for target mode.
-- Rationale: tighter and stable spread directly reduces user execution cost.
+- **Score Focus**: Committed TWAS target vs. observed mode thresholds. (Score 5 if < 0.5%, Score 3 if 0.5-2%, Score 1 if > 2%).
+- **Project Insight**: Tokocrypto's ultra-tight spread (~0.000015%) suggests a primary-MM setup; any candidate offering > 0.5% for anchor pairs like BTC/USDT is non-competitive.
 
 ## 2. Depth Commitment
-- Score focus: guaranteed cumulative notional at 0.5% and 1% from mid (USD equivalent).
-- Rationale: depth determines slippage and real executable liquidity.
+- **Score Focus**: Guaranteed notional at 1% threshold. (Score 5 if > $500k, Score 3 if $50k-$500k, Score 1 if < $50k).
+- **Project Insight**: Tokocrypto's depth (~$24k USD) currently sits in Mode 1 (Retail/Emerging). A professional external MM must offer at least Mode 2 ($50k+) depth to justify engagement fees.
 
 ## 3. Uptime / Quote Presence
-- Score focus: explicit SLA %, exclusions, and measurement interval.
-- Rationale: high quote presence is required for continuous two-sided markets.
+- **Score Focus**: Explicit SLA % commitment. (Score 5 if > 99%, Score 3 if 90-98%, Score 1 if < 90%).
+- **Project Insight**: High quote presence is the baseline. Reku's "sparse" snapshots show that a MM failing this metric (below 95%) effectively leaves the exchange without a functional market.
 
 ## 4. Stress Behavior Policy
-- Score focus: documented behavior during high-volatility windows and recovery commitments.
-- Rationale: resilience during stress separates operationally reliable MMs from cosmetic quoting.
+- **Score Focus**: Documented behavior during high-volatility windows (Recovery Time < 2 min for Score 5).
+- **Project Insight**: Resilience during 2-sigma volatility events separates operationally reliable MMs from "fair-weather" cosmetic quoting.
 
 ## 5. Inventory & Hedging Transparency
-- Score focus: visibility into inventory limits, hedging venues, and IDR risk handling.
-- Rationale: poor hedging discipline can destabilize local pair quality.
+- **Score Focus**: Visibility into IDR hedging venues and inventory limits.
+- **Rationale**: Given the IDR-denomination of pairs like BTC/IDR, poor hedging discipline can lead to toxic flow and destabilized spreads.
 
 ## 6. Reporting Cadence & Auditability
-- Score focus: reporting frequency, metric coverage, and willingness to provide raw logs.
-- Rationale: exchanges need verifiable evidence for SLA enforcement.
+- **Score Focus**: Reporting frequency and willingness to provide raw quote logs.
+- **Rationale**: Without verifiable evidence, SLA enforcement (penalties) becomes impossible. Professional MMs should provide daily automated reports.
 
 ## Scoring Template
 

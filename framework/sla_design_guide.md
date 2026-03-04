@@ -3,33 +3,31 @@
 This guide translates liquidity diagnostics into enforceable contract terms.
 
 ## 1. Quote Presence Obligation
-- Recommend baseline: 97% minimum for anchor pairs (1-minute intervals).
-- Exclusions: pre-approved maintenance windows only.
-- Rationale: two-sided continuity is the minimum requirement for market quality.
+- **Baseline**: 97% minimum for anchor pairs (1-minute intervals).
+- **Measurement**: Exclude pre-approved maintenance windows.
+- **Project Insight**: As demonstrated by Reku's liquidity gaps, anything below 90% presence results in a non-functional market for HNWIs and institutional takers.
 
 ## 2. Spread Obligation
-- Define max spread as % of mid-price.
-- Use two regimes:
-  - Normal conditions: stricter cap.
-  - High-volatility conditions: wider cap with explicit trigger (example: >3% in 5 minutes).
-- Rationale: prevents vague "best effort" behavior.
+- **Max Spread**: Specified as a percentage of mid-price.
+- **Regime 1 (Normal)**: Cap at 1.0% (calibrated against Tokocrypto's baseline).
+- **Regime 2 (High Volatility)**: Cap at 3.5% with explicit trigger (e.g., >3% price move in 5 minutes).
+- **Rationale**: Prevents "spread blowout" during predictable volatility spikes.
 
 ## 3. Depth Obligation
-- Minimum cumulative depth at 0.5% and 1% from mid in USD-equivalent.
-- Review quarterly as organic volume evolves.
-- Rationale: spread-only SLAs can be gamed with shallow books.
+- **Minimum Notional**: Must guarantee at least $50k USD at 1% threshold for Mode 2 readiness.
+- **Review**: Quarterly review to adjust for organic volume growth on the exchange.
+- **Rationale**: Prevents gaming the SLA with "paper-thin" spreads that have zero executable depth (the "Tight but Thin" failure mode).
 
 ## 4. Reporting Requirements
-- Daily automated report: quote presence, realized spread, and depth statistics.
-- Monthly raw quote log audit rights for exchange.
-- Rationale: auditability is necessary for objective enforcement.
+- **Daily Report**: Automated metrics for quote presence, TWAS, and depth statistics.
+- **Audit Rights**: Exchange retains monthly right to audit raw quote logs.
+- **Rationale**: Auditability is the prerequisite for objective SLA enforcement.
 
-## 5. Penalty Framework
-- Tiered financial consequences:
-  - <97% uptime: warning
-  - <95% uptime: fee reduction
-  - <90% uptime: contract review
-- Rationale: monetary penalties align incentives better than reputational warnings.
+## 5. Penalty Framework (Tiered)
+- **Warning**: 96-97% uptime.
+- **Fee Reduction**: 90-95% uptime (Recommend 20% reduction in monthly retainer).
+- **Contract Review**: < 90% uptime or persistent depth failure.
+- **Rationale**: Monetary penalties align MM incentives with exchange health better than reputational warnings.
 
 ## 6. Termination Clauses
 - 30-day termination for sustained underperformance.
