@@ -10,7 +10,7 @@ Senior Treasury & Finance Operations Specialist | CFA Level I | FRM Part I
 
 This repository features the **MM/LP Evaluation Framework**, a data-driven decision engine designed to evaluate the performance of Market Makers (MM) and Liquidity Providers (LP) in fragmented crypto markets. Grounded in real orderbook data from Indonesian exchanges, it provides a quantitative standard for exchange operators to assess when to move from internal operations to external MM dependencies.
 
-**[Project Analysis & Methodology →](https://delomite.com/blog/mm-lp-framework/)**
+**[Methodology & Detailed Findings →](https://delomite.com/blog/mm-lp-framework/)**
 
 ### Business Context
 Newly founded exchanges often struggle with a critical strategic gap:
@@ -37,12 +37,18 @@ Newly founded exchanges often struggle with a critical strategic gap:
 | **Recovery Time** | < 2 min | > 30 min | < 1 min |
 | **Status** | **Monitored Trading** | **Not Ready** | **Institutional** |
 
-### Scenario Calibration (MM Archetypes)
-| Archetype | Spread Commitment | Depth Profile | Stress Resilience | Verdict |
-|-----------|-------------------|---------------|-------------------|----------|
-| **Good MM** | Tight & Consistent | Deep (> $500k) | Fast Recovery | **Preferred** |
-| **Gaming MM** | Meets SLA Only | "Paper Thin" | Fragile | **Reject** |
-| **Stressed MM**| Reactive | Modest | Slow Recovery | **Monitor** |
+### Liquidity Gap Analysis
+![Liquidity Gap](assets/charts/research_chart.png)
+*Figure 1: Numerical depth comparison at the critical 1.0% slippage threshold.*
+
+---
+
+## 🎯 Project Results & Recommendations
+
+Based on the empirical diagnostics conducted between Tokocrypto and Reku, the following operational verdicts have been reached:
+
+- **Tokocrypto BTC/IDR**: Assigned to **Mode 2 (Hybrid)**. While spreads are institutional-grade, the "Tight but Thin" depth (~$24k) requires a primary Market Maker commitment to support institutional-sized takers (> 100M IDR) without excessive slippage.
+- **Reku BTC/IDR**: Assigned to **Mode 1 (Growth)**. The sparse quote presence (< 5%) and zero measurable depth at 1% indicate the exchange is currently unsuitable for professional volume and requires a foundational MM engagement to establish basic price continuity.
 
 ---
 

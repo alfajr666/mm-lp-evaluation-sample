@@ -58,3 +58,11 @@ coverage.xml
 # Any other generated files you don't want to track
 debug_*.py
 mm-lp-evaluation-framework-brief.md
+requirements.txt
+research_report.md
+scripts/
+tests/
+.venv/
+notebooks/01_data_collection.ipynb
+notebooks/03_cross_exchange_comparison.ipynb
+notebooks/*_output.ipynb
