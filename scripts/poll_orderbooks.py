@@ -192,6 +192,7 @@ def log_error(output_dir: Path, exchange: str, pair: str, error: Exception) -> N
 
 
 def collect_once(output_dir: Path) -> None:
+    logging.info("starting collection cycle: %s", utc_now())
     for exchange in ("binance", "tokocrypto"):
         for pair in EXCHANGE_CONFIG[exchange]["pairs"]:
             try:
@@ -287,8 +288,11 @@ def main() -> None:
 
     import schedule
 
+    logging.info("collector starting (initial run)...")
+    collect_once(out)
+
     schedule.every(args.interval_seconds).seconds.do(collect_once, output_dir=out)
-    logging.info("collector started: interval=%ss output=%s", args.interval_seconds, out)
+    logging.info("collector scheduled: interval=%ss output=%s", args.interval_seconds, out)
 
     while True:
         schedule.run_pending()
