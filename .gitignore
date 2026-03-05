@@ -60,7 +60,6 @@ debug_*.py
 mm-lp-evaluation-framework-brief.md
 requirements.txt
 research_report.md
-scripts/
 tests/
 .venv/
 notebooks/01_data_collection.ipynb
