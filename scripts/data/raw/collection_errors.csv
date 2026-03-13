@@ -1,0 +1,2 @@
+timestamp_utc,exchange,pair,error
+2026-03-13T06:27:15.389093+00:00,reku,orderbookall,request failed after 3 retries: 502 Server Error: Bad Gateway for url: https://api.reku.id/v2/orderbook?symbol=btcidr
